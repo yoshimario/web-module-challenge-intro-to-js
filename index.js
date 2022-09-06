@@ -52,9 +52,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
-
+var numString = "1999";
+console.log(Number(numString));
 
 /*
 Task 1d - Multiply
