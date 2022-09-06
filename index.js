@@ -19,9 +19,8 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+var votingAge = 18;
+console.log(votingAge >= 18);
 /*
 Task 1b - Values (not auto tested)
 
