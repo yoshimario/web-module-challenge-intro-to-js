@@ -64,8 +64,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(a, b){
   /*add your code here*/
+  return a * b;
 }
 
 
