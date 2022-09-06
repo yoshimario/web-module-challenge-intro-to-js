@@ -33,7 +33,12 @@ Do the following:
    HINT: no function required
 */
 
-
+var firstThing = 1; 
+var secondThing = 1;
+if (firstThing === secondThing) {
+  firstThing = 3;
+}
+console.log(firstThing);
 
 
 
