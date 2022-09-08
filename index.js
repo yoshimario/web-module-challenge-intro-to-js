@@ -134,39 +134,29 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(age, weight){
-  /*add your code here*/
-  let foodAmount;
-    if (age >= 1){
-      if (weight <= 5){
-        foodAmount = weight * .05;
-      }
-      else if (weight <= 10){
-        foodAmount = weight * .04;
-      }
-      else if (weight <= 15) {
-        foodAmount = weight * .03;
-      }
-      else if (weight > 15) {
-        foodAmount = weight * .02;
-      }
-     }
-     else if (age < 1) {
-      if (age <= .33) {
-        foodAmount = weight * .10;
-      }
-      else if (age <=.5833) {
-        foodAmount = weight * .05;
-      }
-      else if (age < 1) {
-        foodAmount = weight * .04;
-      }
-    }
-
-    return foodAmount;
-
+function hungryDog(weight,age){
+  if(age >= 1 && weight <= 5){
+    return weight * 0.05;
+  }
+  else if(age >= 1 && weight > 5 && weight <= 10){
+    return weight * 0.04;
+  }
+  else if(age >= 1 && weight > 10 && weight <= 15){
+    return weight * 0.03;
+  }
+  else if(age >= 1 && weight > 15){
+    return weight * 0.02;
+  }
+  else if(age <=1 && age > 0.583){
+    return weight * 0.04;
+  }
+  else if(age <= 0.583 && age > 0.333){
+    return weight * 0.05;
+  }else if(age < 0.333){
+    return weight * 0.1
+  }
 }
-
+console.log(hungryDog(6, 10));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
